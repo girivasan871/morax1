@@ -28,6 +28,14 @@
         <i class="fa-brands fa-square-instagram"></i>
       </div>
     </header>
+    <div class="text-roll">
+      <marquee>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, nulla?
+        Architecto, saepe porro voluptates quibusdam similique quos cupiditate
+        eius adipisci, eveniet eos amet corporis assumenda veniam autem
+        recusandae, voluptatibus aliquid.</marquee
+      >
+    </div>
     <header class="header-2">
       <div class="logo">
         <h1>MOR<span id="capital-a">A</span>X</h1>
@@ -57,5 +65,119 @@
         <i class="fa-solid fa-x"></i>
       </div>
     </header>
+
+    <main>
+      <section class="hero-header">
+        <div class="row">
+          <div class="col-1">
+            <h2>WD3DM</h2>
+            <h1>Web, 3D Modelling, Digital Marketing</h1>
+            <p>
+              Welcome to [Your Company Name], where creativity meets technology!
+              We specialize in Web Design, 3D Modelling, and Digital Marketing,
+              delivering innovative solutions that elevate your brand. From
+              captivating websites to stunning 3D visuals and impactful
+              marketing campaigns, we turn ideas into reality. Partner with us
+              to transform your digital presence today!
+            </p>
+          </div>
+          <div class="col-2">
+            <img
+              src="./images/web-design-graphic-design-vector-graphics-illustration-png-favpng-08YZvWSFb7BUFhSmK6DqWWJhh-removebg-preview.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutus-section">
+        <div class="row">
+          <div class="col-1">
+            <img src="./images/about-us-concept-illustration_114360-639.png" />
+          </div>
+          <div class="col-2">
+            <h1>ABOUT US</h1>
+            <h2>WHO WE ARE?</h2>
+            <p>
+              We are an innovative and dynamic team committed to driving growth
+              and success through cutting-edge solutions. Our expertise lies in
+              delivering tailored services that empower businesses to achieve
+              their goals efficiently. With a customer-centric approach and a
+              passion for excellence, we strive to build lasting partnerships
+              and create impactful results.
+            </p>
+            <div class="circle-container">
+              <svg class="progress-circle">
+                <circle class="background" cx="75" cy="75" r="60"></circle>
+                <circle
+                  id="codingProgress"
+                  class="progress"
+                  cx="75"
+                  cy="75"
+                  r="60"
+                ></circle>
+              </svg>
+              <div class="label" id="codingLabel">Coding - 90%</div>
+            </div>
+
+            <div class="circle-container">
+              <svg class="progress-circle">
+                <circle class="background" cx="75" cy="75" r="60"></circle>
+                <circle
+                  id="modellingProgress"
+                  class="progress"
+                  cx="75"
+                  cy="75"
+                  r="60"
+                ></circle>
+              </svg>
+              <div class="label" id="modellingLabel">Modelling - 50%</div>
+            </div>
+
+            <div class="circle-container">
+              <svg class="progress-circle">
+                <circle class="background" cx="75" cy="75" r="60"></circle>
+                <circle
+                  id="digitalMarketingProgress"
+                  class="progress"
+                  cx="75"
+                  cy="75"
+                  r="60"
+                ></circle>
+              </svg>
+              <div class="label" id="digitalMarketingLabel">
+                Digital Marketing - 80%
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button class="game-button" id="hoverButton">Dare to Hover Me</button>
+
+      <section class="services"></section>
+    </main>
+    <script>
+      const button = document.getElementById("hoverButton");
+
+      button.addEventListener("mouseover", () => {
+        const x = Math.random() * (window.innerWidth - button.clientWidth);
+        const y = Math.random() * (window.innerHeight - button.clientHeight);
+        button.style.left = `${x}px`;
+        button.style.top = `${y}px`;
+      });
+
+      function setProgress(elementId, percentage) {
+        const circle = document.getElementById(elementId);
+        const circumference = 2 * Math.PI * 60;
+        const offset = circumference * (1 - percentage / 100);
+        circle.style.strokeDashoffset = offset;
+      }
+
+      window.onload = () => {
+        setProgress("codingProgress", 50);
+        setProgress("modellingProgress", 50);
+        setProgress("digitalMarketingProgress", 50);
+      };
+    </script>
   </body>
 </html>
