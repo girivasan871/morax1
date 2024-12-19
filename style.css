@@ -288,6 +288,8 @@
 }
 .aboutus-section .row .col-1 {
   flex-basis: 45%;
+  animation-name: aboutuscol1slide;
+  animation-duration: 2s;
 }
 .aboutus-section .row .col-1 img {
   aspect-ratio: 16 / 9;
@@ -295,6 +297,8 @@
 
 .aboutus-section .row .col-2 {
   flex-basis: 45%;
+  animation-name: aboutuscol2slide;
+  animation-duration: 2s;
 }
 .aboutus-section .row .col-2 h1 {
   font-size: 42px;
@@ -352,6 +356,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+@keyframes aboutuscol1slide {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes aboutuscol2slide {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 @media only screen and (max-width: 1200px) {
   .aboutus-section .row {
