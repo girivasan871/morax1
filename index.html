@@ -12,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header-1">
@@ -130,7 +136,7 @@
                   r="60"
                 ></circle>
               </svg>
-              <div class="label" id="modellingLabel">Modelling</div>
+              <div class="label" id="modellingLabel">3D Modelling</div>
             </div>
 
             <div class="circle-container">
@@ -154,7 +160,137 @@
 
       <button class="game-button" id="hoverButton">Dare to Hover Me</button>
 
-      <section class="services"></section>
+      <section class="services-1">
+        <h1>OUR SERVICES</h1>
+        <div class="services-list">
+          <div class="row">
+            <div class="icon-container">
+              <button class="icon" onclick="showDiv('div1')">
+                <i class="fa-brands fa-webflow" id="fa-webflow"></i>
+              </button>
+
+              <button class="icon" onclick="showDiv('div2')">
+                <i class="fa-solid fa-cube" id="fa-cubes"></i>
+              </button>
+
+              <button class="icon" onclick="showDiv('div3')">
+                <i class="fa-solid fa-chart-simple" id="fa-chart-simple"></i>
+              </button>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="content" id="div1">
+              <div class="col-21-1">
+                <img
+                  src="./images/designers-are-working-desing-web-page-web-design-user-interface-user-experience-content-organization_335657-4403.png"
+                />
+              </div>
+              <div class="col-21-2">
+                <h3>
+                  MORAX is a dynamic web design startup dedicated to creating
+                  visually stunning, user-friendly websites that drive business
+                  growth. Our expert team blends creativity with cutting-edge
+                  technology to deliver tailored web solutions. From sleek
+                  portfolios to robust e-commerce platforms, we transform ideas
+                  into engaging online experiences that captivate audiences and
+                  elevate brands.
+                </h3>
+              </div>
+            </div>
+            <div class="content" id="div2">
+              <div class="col-22-1">
+                <img
+                  src="./images/3D modeling vector image of a person sitting in front of a computer doing exterior building design work.png"
+                />
+              </div>
+              <div class="col-22-2">
+                <h3>
+                  MORAX is a dynamic web design startup dedicated to creating
+                  visually stunning, user-friendly websites that drive business
+                  growth. Our expert team blends creativity with cutting-edge
+                  technology to deliver tailored web solutions. From sleek
+                  portfolios to robust e-commerce platforms, we transform ideas
+                  into engaging online experiences that captivate audiences and
+                  elevate brands.
+                </h3>
+              </div>
+            </div>
+            <div class="content" id="div3">
+              <div class="col-23-1">
+                <img
+                  src="./images/digital-marketing-team-with-laptops-light-bulb-marketing-team-metrics-marketing-team-lead-responsibilities-concept-white-background_335657-2022 (1).png"
+                />
+              </div>
+              <div class="col-23-2">
+                <h3>
+                  MORAX is a dynamic web design startup dedicated to creating
+                  visually stunning, user-friendly websites that drive business
+                  growth. Our expert team blends creativity with cutting-edge
+                  technology to deliver tailored web solutions. From sleek
+                  portfolios to robust e-commerce platforms, we transform ideas
+                  into engaging online experiences that captivate audiences and
+                  elevate brands.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-projects">
+        <h1>PORTFOLIO</h1>
+        <h2>OUR RECENT PROJECTS</h2>
+        <div class="row">
+          <div class="col1">
+            <img
+              src="./images/digital-marketing-team-with-laptops-light-bulb-marketing-team-metrics-marketing-team-lead-responsibilities-concept-white-background_335657-2022 (1).png"
+            />
+            <h3>Project 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+              tenetur veniam itaque sunt veritatis ut reiciendis nostrum
+              pariatur velit voluptatem in sit dolores,?
+            </p>
+            <button>Preview</button>
+          </div>
+          <div class="col2">
+            <img
+              src="./images/web-design-graphic-design-vector-graphics-illustration-png-favpng-08YZvWSFb7BUFhSmK6DqWWJhh-removebg-preview.png"
+            />
+            <h3>Project 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+              tenetur veniam itaque sunt veritatis ut reiciendis nostrum
+              pariatur velit voluptatem in sit dolores,?
+            </p>
+            <button>Preview</button>
+          </div>
+          <div class="col3">
+            <img
+              src="./images/about-us-concept-illustration_114360-639.png"
+            />
+            <h3>Project 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+              tenetur veniam itaque sunt veritatis ut reiciendis nostrum
+              pariatur velit voluptatem in sit dolores,?
+            </p>
+            <button>Preview</button>
+          </div>
+          <div class="col4">
+            <img
+              src="./images/preview.png"
+            />
+            <h3>Project 4</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+              tenetur veniam itaque sunt veritatis ut reiciendis nostrum
+              pariatur velit voluptatem in sit dolores,?
+            </p>
+            <button>Preview</button>
+          </div>
+        </div>
+      </section>
     </main>
     <script>
       const button = document.getElementById("hoverButton");
@@ -178,6 +314,20 @@
         setProgress("modellingProgress", 50);
         setProgress("digitalMarketingProgress", 80);
       };
+
+      function showDiv(divId) {
+        // Hide all content divs
+        const contents = document.querySelectorAll(".content");
+        contents.forEach((content) => {
+          content.style.display = "none";
+        });
+
+        // Show the selected content div
+        const selectedDiv = document.getElementById(divId);
+        if (selectedDiv) {
+          selectedDiv.style.display = "flex";
+        }
+      }
     </script>
   </body>
 </html>
