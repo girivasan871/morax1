@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .header-1 {
@@ -524,6 +525,129 @@
 #div1 {
   display: flex; /* Show content for Icon 1 by default */
 }
+.services-2 {
+  display: none;
+}
+.services-2 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.services-2 .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-2 h1 {
+  font-size: 42px;
+  padding: 20px 0px;
+  color: #4d02fd;
+}
+.services-2 h2 {
+  font-size: 56px;
+  padding: 10px 0px;
+  color: #ff8800;
+}
+.services-2 .services-list button {
+  margin: 10px;
+}
+.services-2 .services-list .row .icon-container .fa-webflow {
+  font-size: 80px;
+  margin: 20px;
+  transition: 0.3s ease-in-out;
+}
+.services-2 .services-list .row .icon-container .fa-cube {
+  font-size: 80px;
+  margin: 20px;
+  transition: 0.3s ease-in-out;
+}
+.services-2 .services-list .row .icon-container .fa-chart-simple {
+  font-size: 80px;
+  margin: 20px;
+  transition: 0.3s ease-in-out;
+}
+.services-2 .services-list button {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+}
+.services-2 .services-list button:focus {
+  background-color: #fc0362;
+  color: #fff;
+}
+.services-2 .services-list .content-container {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.services-2 .services-list .content-container .content2 .col-221-1 img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.services-2 .services-list .content-container p {
+  font-size: 30px;
+  padding: 20px;
+}
+.services-2 .services-list .content-container .content2 {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.services-2 .services-list .content-container .content2 .col-221-1 {
+  animation-name: columnone1;
+  animation-duration: 1.5s;
+}
+.services-2 .services-list .content-container .content2 .col-221-2 {
+  animation-name: columntwo2;
+  animation-duration: 1.5s;
+}
+.services-2 .services-list .content-container .content2 .col-222-1 {
+  animation-name: columnone1;
+  animation-duration: 1.5s;
+}
+.services-2 .services-list .content-container .content2 .col-222-2 {
+  animation-name: columntwo2;
+  animation-duration: 1.5s;
+}
+.services-2 .services-list .content-container .content2 .col-223-1 {
+  animation-name: columnone1;
+  animation-duration: 1.5s;
+}
+.services-2 .services-list .content-container .content2 .col-223-2 {
+  animation-name: columntwo2;
+  animation-duration: 1.5s;
+}
+.services-2 .services-list .content-container .content2 img {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.services-2 .services-list .content-container .content2 .col-221-2 h3 {
+  font-size: 28px;
+}
+.services-2 .services-list .content-container .content2 .col-222-2 h3 {
+  font-size: 28px;
+}
+.services-2 .services-list .content-container .content2 .col-223-2 h3 {
+  font-size: 28px;
+}
+.services-2 .services-list .content-container .content2 {
+  display: none; /* Hide all content divs by default */
+}
+
+#div21 {
+  display: block; /* Show content for Icon 1 by default */
+}
+
 @keyframes columnone1 {
   from {
     transform: translateX(-300px);
@@ -542,6 +666,10 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .services-1 {
+    display: none;
+  }
+
   .services-1 h1 {
     font-size: 36px;
     padding: 5px 0px;
@@ -581,6 +709,34 @@
     display: inline-block;
     /* Use full width on smaller screens */
     padding: 0 10px; /* Add side padding for better alignment */
+  }
+  .services-2 {
+    display: block;
+  }
+  .services-2 h1 {
+    font-size: 36px;
+    padding: 5px 0px;
+    color: #4d02fd;
+  }
+  .services-2 h2 {
+    font-size: 42px;
+    padding: 5px 0px;
+    color: #ff8800;
+  }
+  .services-2 .services-list .row .icon-container .fa-webflow {
+    font-size: 40px;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  .services-2 .services-list .row .icon-container .fa-cube {
+    font-size: 40px;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  .services-2 .services-list .row .icon-container .fa-chart-simple {
+    font-size: 40px;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
   }
 }
 .portfolio-projects {
@@ -800,36 +956,145 @@
     margin: 25px 0px;
   }
   .portfolio-projects .row .col1 {
-  flex-basis: 20%;
-  margin: 20px 20px;
-  padding: 10px;
-  border: 1px solid #ebebeb;
-  animation-name: columnslides1;
-  animation-duration: 0.5s;
+    flex-basis: 20%;
+    margin: 20px 20px;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    animation-name: columnslides1;
+    animation-duration: 0.5s;
+  }
+  .portfolio-projects .row .col2 {
+    flex-basis: 20%;
+    margin: 20px 20px;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    animation-name: columnslides2;
+    animation-duration: 1s;
+  }
+  .portfolio-projects .row .col3 {
+    flex-basis: 20%;
+    margin: 20px 20px;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    animation-name: columnslides3;
+    animation-duration: 1.5s;
+  }
+  .portfolio-projects .row .col4 {
+    flex-basis: 20%;
+    margin: 20px 20px;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    animation-name: columnslides4;
+    animation-duration: 2s;
+  }
+  .portfolio-projects .row .col1:hover {
+    box-shadow: 1px 1px 3px #fc0362, 1px 1px 3px #fc0362, 1px 1px 3px #fc0362,
+      1px 1px 3px #fc0362;
+    scale: 1;
+  }
+  .portfolio-projects .row .col2:hover {
+    box-shadow: 1px 1px 3px #fc0362, 1px 1px 3px #fc0362, 1px 1px 3px #fc0362,
+      1px 1px 3px #fc0362;
+    scale: 1;
+  }
+  .portfolio-projects .row .col3:hover {
+    box-shadow: 1px 1px 3px #fc0362, 1px 1px 3px #fc0362, 1px 1px 3px #fc0362,
+      1px 1px 3px #fc0362;
+    scale: 1;
+  }
+  .portfolio-projects .row .col4:hover {
+    box-shadow: 1px 1px 3px #fc0362, 1px 1px 3px #fc0362, 1px 1px 3px #fc0362,
+      1px 1px 3px #fc0362;
+    scale: 1;
+  }
 }
-.portfolio-projects .row .col2 {
-  flex-basis: 20%;
-  margin: 20px 20px;
-  padding: 10px;
-  border: 1px solid #ebebeb;
-  animation-name: columnslides2;
-  animation-duration: 1s;
+.contact-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
-.portfolio-projects .row .col3 {
-  flex-basis: 20%;
-  margin: 20px 20px;
-  padding: 10px;
-  border: 1px solid #ebebeb;
-  animation-name: columnslides3;
-  animation-duration: 1.5s;
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
-.portfolio-projects .row .col4 {
-  flex-basis: 20%;
-  margin: 20px 20px;
-  padding: 10px;
-  border: 1px solid #ebebeb;
-  animation-name: columnslides4;
-  animation-duration: 2s;
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
 }
-  
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.contact-form button {
+  padding: 10px 15px;
+  background: #ffffff;
+  color: #fc0362;
+  border: 2px solid #fc0362;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #fc0362;
+  color: white;
+}
+
+.success-message,
+.error-message {
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.success-message {
+  background: #d4edda;
+  color: #155724;
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+}
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #fc0362;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
